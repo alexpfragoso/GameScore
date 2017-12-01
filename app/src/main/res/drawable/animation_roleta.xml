@@ -1,0 +1,17 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    id="animacao_roleta" android:oneshot="false" >
+    <item android:drawable="@drawable/roletagif1" android:duration="70" />
+    <item android:drawable="@drawable/roletagif2" android:duration="70" />
+    <item android:drawable="@drawable/roletagif3" android:duration="70" />
+    <item android:drawable="@drawable/roletagif4" android:duration="70" />
+    <item android:drawable="@drawable/roletagif5" android:duration="70" />
+    <item android:drawable="@drawable/roletagif6" android:duration="70" />
+    <item android:drawable="@drawable/roletagif7" android:duration="70" />
+    <item android:drawable="@drawable/roletagif8" android:duration="70" />
+    <item android:drawable="@drawable/roletagif9" android:duration="70" />
+    <item android:drawable="@drawable/roletagif10" android:duration="70" />
+    <item android:drawable="@drawable/roletagif11" android:duration="70" />
+    <item android:drawable="@drawable/roletagif12" android:duration="70" />
+
+
+</animation-list>

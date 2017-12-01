@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.edu.ifspsaocarlos.sdm.gamescore.view.TelaMarcadoresActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="br.edu.ifspsaocarlos.sdm.gamescore.view.TelaMarcadoresActivity">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="15dp"
+                android:text="Cara ou Coroa"
+                android:textColor="@android:color/background_light"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_cara_ou_coroa" />
+
+            <ImageButton
+                android:id="@+id/bt_cara_ou_coroa"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/moeda_icone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_roleta" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="29dp"
+                android:layout_marginTop="15dp"
+                android:text="Cronômetro de Xadrez"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_cronometro_xadrez" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="15dp"
+                android:text="Roleta"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_roleta" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="42dp"
+                android:layout_marginTop="15dp"
+                android:text="Placar para Cartas"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_baralho" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="15dp"
+                android:text="Jogar Dado"
+                android:textColor="@android:color/background_light"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_dado" />
+
+            <ImageButton
+                android:id="@+id/bt_roleta"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/roleta_icone"
+                android:layout_marginTop="48dp"
+                app:layout_constraintTop_toBottomOf="@+id/bt_dado"
+                android:layout_marginLeft="50dp"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <ImageButton
+                android:id="@+id/bt_baralho"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/baralho_icone"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="31dp"
+                android:layout_marginRight="50dp"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <ImageButton
+                android:id="@+id/bt_cronometro_xadrez"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/chronometer_icone"
+                android:layout_marginTop="48dp"
+                app:layout_constraintTop_toBottomOf="@+id/bt_baralho"
+                android:layout_marginRight="50dp"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <ImageButton
+                android:id="@+id/bt_dado"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/dados_icone"
+                android:layout_marginLeft="50dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="31dp" />
+
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

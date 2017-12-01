@@ -1,0 +1,17 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    id="animacao_moeda" android:oneshot="false" >
+    <item android:drawable="@drawable/moeda1" android:duration="60" />
+    <item android:drawable="@drawable/moeda2" android:duration="60" />
+    <item android:drawable="@drawable/moeda3" android:duration="60" />
+    <item android:drawable="@drawable/moeda4" android:duration="60" />
+    <item android:drawable="@drawable/moeda5" android:duration="60" />
+    <item android:drawable="@drawable/moeda6" android:duration="60" />
+    <item android:drawable="@drawable/moeda7" android:duration="60" />
+    <item android:drawable="@drawable/moeda8" android:duration="60" />
+    <item android:drawable="@drawable/moeda9_coroa" android:duration="60" />
+    <item android:drawable="@drawable/moeda10" android:duration="60" />
+    <item android:drawable="@drawable/moeda11" android:duration="60" />
+    <item android:drawable="@drawable/moeda12" android:duration="60" />
+
+
+</animation-list>

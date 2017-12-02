@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.edu.ifspsaocarlos.sdm.gamescore.view.NovoJogadorActivity">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
+        android:id="@+id/frameLayout3">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="300dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="9dp"
+                android:text="Pontuação:"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_nome_jogador" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="300dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="36dp"
+                android:text="Nome do Jogador:"
+                android:textColor="@android:color/background_light"
+                android:textSize="24sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/bt_cancelar_novo_jogador"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:layout_marginRight="51dp"
+                android:text="Cancelar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginEnd="51dp" />
+
+            <Button
+                android:id="@+id/bt_salvar_novo_jogador"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:layout_marginLeft="53dp"
+                android:text="Salvar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="53dp" />
+
+            <EditText
+                android:id="@+id/et_pontuacao_novo_jogador"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="50dp"
+                android:background="@android:color/background_light"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_nome_jogador" />
+
+            <Button
+                android:id="@+id/bt_menos"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="53dp"
+                android:layout_marginStart="53dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/menos_icone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_nome_jogador" />
+
+            <Button
+                android:id="@+id/bt_mais"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginRight="51dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/mais_icone"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_nome_jogador" />
+
+            <EditText
+                android:id="@+id/et_nome_jogador"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="80dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteY="103dp" />
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

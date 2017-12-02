@@ -35,6 +35,7 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
     private JogadorArrayAdapter jogadorArrayAdapter;
 
     private final int CADASTRO_NOVO_JOGADOR = 0;
+    private final String ATUALIZAR_JOGADOR = 0;
 
     //MÉTODOS
 
@@ -98,6 +99,15 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+        //chamar a tela de NovoJogador para atualizar
+        Jogador jogador = jogadorArrayAdapter.getItem(i);
+
+        Intent atulizarJogadorIntent = new Intent(this, NovoJogadorActivity.class);
+
+        atulizarJogadorIntent.putExtra(ATUALIZAR_JOGADOR,jogador);
+
+        startActivity(atulizarJogadorIntent);
 
     }
 

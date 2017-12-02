@@ -13,6 +13,8 @@ public class Jogador implements Serializable, Comparable<Jogador>{
     String nome;
     int pontuacao;
     int avatar;
+    int id=0;
+    String nome_antigo = "nulo";
 
     public Jogador(String nome, int pontuacao) {
         this.nome = nome;
@@ -31,6 +33,14 @@ public class Jogador implements Serializable, Comparable<Jogador>{
         this.nome = nome;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public int getPontuacao() {
         return pontuacao;
     }
@@ -45,6 +55,14 @@ public class Jogador implements Serializable, Comparable<Jogador>{
 
     public void setAvatar(int avatar) {
         this.avatar = avatar;
+    }
+
+    public String getNomeAntigo() {
+        return nome_antigo;
+    }
+
+    public void setNomeAntigo(String nome) {
+        this.nome_antigo = nome;
     }
 
     @Override

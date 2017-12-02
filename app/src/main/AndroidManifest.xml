@@ -39,7 +39,8 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".view.NovoJogadorActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".view.Atualizar_Remover_JogadorActivity"></activity>
     </application>
 
 </manifest>

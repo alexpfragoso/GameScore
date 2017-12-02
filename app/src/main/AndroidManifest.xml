@@ -31,11 +31,14 @@
             android:name=".view.RoletaActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:theme="@style/AppTheme2"
             android:name=".view.RankingActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
         <activity
             android:name=".view.CaraCoroaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.NovoJogadorActivity"
             android:screenOrientation="portrait"></activity>
     </application>
 

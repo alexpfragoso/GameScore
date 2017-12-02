@@ -10,12 +10,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import br.edu.ifspsaocarlos.sdm.gamescore.R;
 import br.edu.ifspsaocarlos.sdm.gamescore.adapter.JogadorArrayAdapter;
+import br.edu.ifspsaocarlos.sdm.gamescore.model.ComparadorPontuacao;
 import br.edu.ifspsaocarlos.sdm.gamescore.model.Jogador;
 
 /**
@@ -29,6 +33,8 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
     private ListView listView_jogadores;
     private List<Jogador> lista_de_jogadores;
     private JogadorArrayAdapter jogadorArrayAdapter;
+
+    private final int CADASTRO_NOVO_JOGADOR = 0;
 
     //MÉTODOS
 
@@ -67,7 +73,22 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
+
+        switch (item.getItemId()){
+
+            case R.id.item_menu_adicionar_jogador:
+                Intent novoJogadorIntent = new Intent(this,NovoJogadorActivity.class);
+                startActivityForResult(novoJogadorIntent,CADASTRO_NOVO_JOGADOR);
+                break;
+
+            case R.id.item_menu_remover_jogador:
+                finish();
+                break;
+
+            default:
+                return false;
+        }
+        return true;
     }
 
     @Override
@@ -83,5 +104,20 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == CADASTRO_NOVO_JOGADOR){
+            if(resultCode == RESULT_OK){
+                Jogador novoJogador = (Jogador)data.getSerializableExtra("novo jogador");
+                lista_de_jogadores.add(novoJogador);
+                Collections.sort (lista_de_jogadores, new ComparadorPontuacao());
+                jogadorArrayAdapter.notifyDataSetChanged();
+                Toast.makeText(this,"Novo jogador adicionado!",Toast.LENGTH_SHORT).show();
+            }
+
+        }
     }
+
+
+
+
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/item_menu_adicionar_jogador"
+        android:icon="@drawable/add_jogador"
+        android:title="Adicionar Jogador"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_menu_remover_jogador"
+        android:icon="@drawable/remover_jogador"
+        android:title="Remover Jogador"
+        app:showAsAction="always" />
+    <item android:id="@+id/item_menu_salvar_pontuacao"
+        android:title="Salvar Pontuação"/>
+    <item android:id="@+id/item_menu_carregar_pontuacao"
+        android:title="Carregar Pontuação"/>
+</menu>

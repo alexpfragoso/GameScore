@@ -42,7 +42,10 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".view.Atualizar_Remover_JogadorActivity"
-            android:screenOrientation="portrait" ></activity>
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.SorteioActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

@@ -18,6 +18,7 @@ public class TelaMarcadoresActivity extends AppCompatActivity implements View.On
     ImageButton bt_roleta;
     ImageButton bt_cara_coroa;
     ImageButton bt_ranking;
+    ImageButton bt_sorteio;
 
     //MÉTODOS
     @Override
@@ -35,6 +36,8 @@ public class TelaMarcadoresActivity extends AppCompatActivity implements View.On
         bt_cara_coroa.setOnClickListener(this);
         bt_ranking = (ImageButton)findViewById(R.id.bt_ranking);
         bt_ranking.setOnClickListener(this);
+        bt_sorteio = (ImageButton)findViewById(R.id.bt_sorteio);
+        bt_sorteio.setOnClickListener(this);
     }
 
     @Override
@@ -73,7 +76,16 @@ public class TelaMarcadoresActivity extends AppCompatActivity implements View.On
                             Intent rankingIntent = new Intent(this,RankingActivity.class);
                             startActivity(rankingIntent);
 
+                        }else{
+
+                            if(view == bt_sorteio){
+
+                                Intent sorteioIntent = new Intent(this,SorteioActivity.class);
+                                startActivity(sorteioIntent);
+
+                            }
                         }
+
                     }
                 }
             }

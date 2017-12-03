@@ -8,6 +8,9 @@ import java.util.Comparator;
  * Created by Alex Fragoso on 02/12/2017.
  */
 
+//classe implementada para comparação de pontuação entre
+//jogadores na lista de jogadores que preenche o ranking de pontos
+
 public class ComparadorPontuacao implements Comparator<Jogador> {
 
     public int compare(Jogador j1, Jogador j2) {

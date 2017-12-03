@@ -55,7 +55,7 @@ public class JogadorArrayAdapter extends ArrayAdapter<Jogador> {
         return convertView;
     }
 
-
+//A view da list view é composta por nome e pontuação do jogador
     private static class Holder {
         public TextView nomeJogadorTextView;
         public TextView pontuacaoJogadorTextView;

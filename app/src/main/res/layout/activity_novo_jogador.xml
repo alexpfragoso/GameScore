@@ -55,11 +55,14 @@
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="100dp"
+                android:layout_marginEnd="51dp"
                 android:layout_marginRight="8dp"
+                android:background="@android:color/holo_blue_dark"
                 android:text="Cancelar"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_marginEnd="51dp" />
+                app:layout_constraintRight_toRightOf="parent" />
 
             <Button
                 android:id="@+id/bt_salvar_novo_jogador"
@@ -67,10 +70,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="100dp"
                 android:layout_marginLeft="8dp"
+                android:layout_marginStart="53dp"
+                android:background="@android:color/holo_blue_dark"
                 android:text="Salvar"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_marginStart="53dp" />
+                app:layout_constraintLeft_toLeftOf="parent" />
 
             <EditText
                 android:id="@+id/et_pontuacao_novo_jogador"

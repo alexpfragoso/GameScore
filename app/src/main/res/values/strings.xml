@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">GameScore</string>
-
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="ranking_de_pontuacao">Ranking de Pontuação</string>
+    <string name="cara_ou_coroa">Cara ou Coroa</string>
+    <string name="cronometro_de_xadrez">Cronômetro de Xadrez</string>
+    <string name="roleta">Roleta</string>
+    <string name="sorteio">Sorteio</string>
+    <string name="jogar_dado">Jogar Dado</string>
 </resources>

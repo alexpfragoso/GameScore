@@ -7,8 +7,8 @@
     tools:context="br.edu.ifspsaocarlos.sdm.gamescore.view.CaraCoroaActivity">
 
     <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -28,11 +28,13 @@
                 android:layout_height="133dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_marginTop="227dp"
+                android:layout_marginTop="168dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/moeda6" />
+                app:srcCompat="@drawable/moeda6"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
 
             <Button
                 android:id="@+id/bt_lancar_moeda"
@@ -47,7 +49,9 @@
                 android:textSize="18sp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
         </android.support.constraint.ConstraintLayout>
 
     </FrameLayout>

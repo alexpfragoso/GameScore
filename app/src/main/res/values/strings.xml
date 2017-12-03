@@ -6,4 +6,17 @@
     <string name="roleta">Roleta</string>
     <string name="sorteio">Sorteio</string>
     <string name="jogar_dado">Jogar Dado</string>
+    <string name="jogador_1">Jogador 1</string>
+    <string name="jogador_2">Jogador 2</string>
+    <string name="jogar_moeda">Jogar Moeda</string>
+    <string name="inicio_do_intervalo">Início do intervalo:</string>
+    <string name="sortear">SORTEAR</string>
+    <string name="final_do_intervalo">Final do intervalo:</string>
+    <string name="girar">Girar</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nome_do_jogador">Nome do Jogador:</string>
+    <string name="pontuacao">Pontuação:</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="entrar">Entrar</string>
 </resources>

@@ -54,7 +54,7 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:background="@android:color/holo_blue_dark"
-                android:text="Jogar Dado"
+                android:text="@string/jogar_dado"
                 android:textColor="@android:color/background_light"
                 android:textSize="18sp"
                 app:layout_constraintLeft_toLeftOf="parent"

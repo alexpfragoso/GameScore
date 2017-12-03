@@ -8,30 +8,30 @@
     <item android:drawable="@drawable/moeda6" android:duration="40" />
     <item android:drawable="@drawable/moeda7" android:duration="40" />
     <item android:drawable="@drawable/moeda8" android:duration="40" />
-    <item android:drawable="@drawable/moeda9_coroa" android:duration="40" />
-    <item android:drawable="@drawable/moeda10" android:duration="40" />
-    <item android:drawable="@drawable/moeda11" android:duration="40" />
-    <item android:drawable="@drawable/moeda12" android:duration="40" />
-    <item android:drawable="@drawable/moeda13" android:duration="40" />
-    <item android:drawable="@drawable/moeda14" android:duration="40" />
-    <item android:drawable="@drawable/moeda15" android:duration="40" />
-    <item android:drawable="@drawable/moeda16" android:duration="40" />
-    <item android:drawable="@drawable/moeda17" android:duration="40" />
-    <item android:drawable="@drawable/moeda18" android:duration="40" />
-    <item android:drawable="@drawable/moeda19" android:duration="40" />
-    <item android:drawable="@drawable/moeda20" android:duration="40" />
-    <item android:drawable="@drawable/moeda21" android:duration="40" />
-    <item android:drawable="@drawable/moeda22" android:duration="40" />
-    <item android:drawable="@drawable/moeda23" android:duration="40" />
-    <item android:drawable="@drawable/moeda24" android:duration="40" />
-    <item android:drawable="@drawable/moeda25_cara" android:duration="40" />
-    <item android:drawable="@drawable/moeda26" android:duration="40" />
-    <item android:drawable="@drawable/moeda27" android:duration="40" />
-    <item android:drawable="@drawable/moeda28" android:duration="40" />
-    <item android:drawable="@drawable/moeda29" android:duration="40" />
-    <item android:drawable="@drawable/moeda30" android:duration="40" />
-    <item android:drawable="@drawable/moeda31" android:duration="40" />
-    <item android:drawable="@drawable/moeda32" android:duration="40" />
+    <item android:drawable="@drawable/moeda9_coroa" android:duration="35" />
+    <item android:drawable="@drawable/moeda10" android:duration="35" />
+    <item android:drawable="@drawable/moeda11" android:duration="35" />
+    <item android:drawable="@drawable/moeda12" android:duration="35" />
+    <item android:drawable="@drawable/moeda13" android:duration="30" />
+    <item android:drawable="@drawable/moeda14" android:duration="30" />
+    <item android:drawable="@drawable/moeda15" android:duration="30" />
+    <item android:drawable="@drawable/moeda16" android:duration="30" />
+    <item android:drawable="@drawable/moeda17" android:duration="30" />
+    <item android:drawable="@drawable/moeda18" android:duration="25" />
+    <item android:drawable="@drawable/moeda19" android:duration="25" />
+    <item android:drawable="@drawable/moeda20" android:duration="25" />
+    <item android:drawable="@drawable/moeda21" android:duration="25" />
+    <item android:drawable="@drawable/moeda22" android:duration="25" />
+    <item android:drawable="@drawable/moeda23" android:duration="25" />
+    <item android:drawable="@drawable/moeda24" android:duration="25" />
+    <item android:drawable="@drawable/moeda25_cara" android:duration="25" />
+    <item android:drawable="@drawable/moeda26" android:duration="25" />
+    <item android:drawable="@drawable/moeda27" android:duration="25" />
+    <item android:drawable="@drawable/moeda28" android:duration="25" />
+    <item android:drawable="@drawable/moeda29" android:duration="20" />
+    <item android:drawable="@drawable/moeda30" android:duration="20" />
+    <item android:drawable="@drawable/moeda31" android:duration="20" />
+    <item android:drawable="@drawable/moeda32" android:duration="20" />
 
 
 

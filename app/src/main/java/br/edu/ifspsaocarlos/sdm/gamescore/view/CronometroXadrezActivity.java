@@ -10,6 +10,9 @@ import android.widget.ImageButton;
 
 import br.edu.ifspsaocarlos.sdm.gamescore.R;
 
+//Essa Activity implementa o funcionamento de um cronometro de um jogo de xadrez
+// O relogio para cada clique para um jogador e continua para o outro.
+
 public class CronometroXadrezActivity extends AppCompatActivity implements View.OnClickListener{
 
     //VARIÁVEIS

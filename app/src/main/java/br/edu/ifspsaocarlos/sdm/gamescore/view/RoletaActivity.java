@@ -18,6 +18,9 @@ import br.edu.ifspsaocarlos.sdm.gamescore.R;
 import static android.R.color.holo_green_dark;
 import static android.R.color.holo_red_dark;
 
+//RoletaActivity é a activity que implementa o metodo de sorteio baseado no jogo de cassino roleta
+//seu sorteio compreende numeros de 00, 0 a 36, variando nas cores vermelho e preto
+
 public class RoletaActivity extends AppCompatActivity implements View.OnClickListener{
 
     //VARIÁVEIS
@@ -40,11 +43,7 @@ public class RoletaActivity extends AppCompatActivity implements View.OnClickLis
         bt_girar = (Button)findViewById(R.id.bt_girar);
         bt_girar.setOnClickListener(this);
         iv_roleta = (ImageView)findViewById(R.id.iv_roletagif);
-        //iv_roleta.setBackgroundResource(R.drawable.animation_roleta);
 
-
-        //mAnimation = (AnimationDrawable)iv_roleta.getBackground();
-        //mAnimation.start();
     }
 
     @Override
@@ -63,7 +62,7 @@ public class RoletaActivity extends AppCompatActivity implements View.OnClickLis
             Random randon = new Random();
             resultado = randon.nextInt(38);
 
-            //Toast.makeText(this,"Resultado: "+ resultado +" Cor: " + resultado_cor, Toast.LENGTH_SHORT).show();
+
 
             new CountDownTimer(4500,1000) {
 

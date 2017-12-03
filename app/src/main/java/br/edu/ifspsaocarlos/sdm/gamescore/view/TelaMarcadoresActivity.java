@@ -9,6 +9,9 @@ import android.widget.ImageButton;
 
 import br.edu.ifspsaocarlos.sdm.gamescore.R;
 
+//a TelaMarcadoresActivity é a tela principal, que contém as funcionalidades de marcação de pontos
+//e formas de sorteios variados
+
 public class TelaMarcadoresActivity extends AppCompatActivity implements View.OnClickListener{
 
     //VARIÁVEIS

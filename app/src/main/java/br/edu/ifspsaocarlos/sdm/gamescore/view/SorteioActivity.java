@@ -13,6 +13,9 @@ import java.util.Random;
 
 import br.edu.ifspsaocarlos.sdm.gamescore.R;
 
+//SorteioActivity é a activity que implementa a funcionalidade de sorteio de um número
+//entre o intervalo escolhido
+
 public class SorteioActivity extends AppCompatActivity implements View.OnClickListener{
 
     //VARIAVEIS

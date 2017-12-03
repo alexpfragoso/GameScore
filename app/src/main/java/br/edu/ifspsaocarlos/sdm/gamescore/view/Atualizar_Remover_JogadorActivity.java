@@ -10,6 +10,9 @@ import android.widget.EditText;
 import br.edu.ifspsaocarlos.sdm.gamescore.R;
 import br.edu.ifspsaocarlos.sdm.gamescore.model.Jogador;
 
+//Essa Activity permite a RankingActivity obter os dados por meio de uma intent
+// para a atualização ou remoção de um jogador da listView implementda pela RankingActivity
+
 public class Atualizar_Remover_JogadorActivity extends AppCompatActivity implements View.OnClickListener{
 
     //VARIAVEIS

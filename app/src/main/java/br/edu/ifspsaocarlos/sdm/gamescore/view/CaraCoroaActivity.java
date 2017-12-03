@@ -13,7 +13,10 @@ import java.util.Random;
 
 import br.edu.ifspsaocarlos.sdm.gamescore.R;
 
-
+//Essa Activity simula o lançamento de uma moeda.
+//A animação utiliza um objeto AnimationDrawable que por sua vez utiliza
+//uma animation_moeda.xml
+//O metodo CountDownTimer é utilizado pra controlar o tempo da animação
 
 public class CaraCoroaActivity extends AppCompatActivity implements View.OnClickListener{
 

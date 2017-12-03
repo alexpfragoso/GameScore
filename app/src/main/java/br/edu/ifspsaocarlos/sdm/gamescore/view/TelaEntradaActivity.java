@@ -8,6 +8,9 @@ import android.widget.ImageButton;
 
 import br.edu.ifspsaocarlos.sdm.gamescore.R;
 
+//TelaEntradaActivity é a tela de abertura do aplicativo
+//que exibe apenas uma imagem e da acesso a tela principal através de um clique
+
 public class TelaEntradaActivity extends AppCompatActivity implements View.OnClickListener {
 
     //VARIÁVEIS

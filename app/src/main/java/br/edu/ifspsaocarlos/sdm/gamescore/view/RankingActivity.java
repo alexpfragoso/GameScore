@@ -33,6 +33,11 @@ import static android.R.attr.id;
  * Created by Alex Fragoso on 01/12/2017.
  */
 
+//A RankingActivity exibe uma lista de jogadores ordenada por pontuação.
+// Na RankingActivity é feita a persistencia do ranking de jogadores apresentado na listView sempre a a Activity
+//é encerrada. É setado um adapter para pegara s informações do array de jogadores e preencher a listView.
+//As Activitys chamadas através do menu ou da propia listView retornam intents que permitem o onActivityResult tratar
+//as modificações realizadas na lista.
 
 public class RankingActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
@@ -60,9 +65,10 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
         if (lista_de_jogadores == null) {
 
             lista_de_jogadores = new ArrayList<>();
-            lista_de_jogadores.add(new Jogador("Alex",3));
-            lista_de_jogadores.add(new Jogador("Maria",2));
-            lista_de_jogadores.add(new Jogador("João",1));
+            //para prencher a lista para testes
+            //lista_de_jogadores.add(new Jogador("Alex",3));
+            //lista_de_jogadores.add(new Jogador("Maria",2));
+            //lista_de_jogadores.add(new Jogador("João",1));
 
         }
     }
@@ -158,7 +164,7 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-        //chamar a tela de AtualizaJogador para atualizar ou Remover
+        //chamar a Activity de AtualizaJogador para atualizar ou Remover
         Jogador jogador = jogadorArrayAdapter.getItem(i);
 
         Intent atualizarJogadorIntent = new Intent(this, Atualizar_Remover_JogadorActivity.class);
@@ -166,16 +172,16 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
         atualizarJogadorIntent.putExtra(JOGADOR_PARA_ATUALIZAR,jogador);
         startActivityForResult(atualizarJogadorIntent,ATUALIZAR_JOGADOR);
 
-
-
     }
+
+    //Resposta das Activitys chamadas através do metodo startActivityForResult
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         if(requestCode == CADASTRO_NOVO_JOGADOR){
-            //Cadastra novo jogador no ranking
+            //Cadastra novo jogador no ranking(listActivity)
             if(resultCode == RESULT_OK){
                 Jogador novoJogador = (Jogador)data.getSerializableExtra(JOGADOR_ADICIONADO);
                 lista_de_jogadores.add(novoJogador);
@@ -183,13 +189,11 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
                 jogadorArrayAdapter.notifyDataSetChanged();
                 Toast.makeText(this,"Novo jogador adicionado!",Toast.LENGTH_SHORT).show();
 
-
-
             }
 
         }else{
             if(requestCode == ATUALIZAR_JOGADOR){
-                //Atualiza jogador do ranking
+                //Atualiza pontuação e nome do jogador no ranking(listActivity)
                 if(resultCode == RESULT_OK){
                     Jogador jogador = (Jogador)data.getSerializableExtra(JOGADOR_ATUALIZADO);
                     int i = buscaJogador(jogador.getNomeAntigo());
@@ -200,7 +204,7 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
                     jogadorArrayAdapter.notifyDataSetChanged();
                     Toast.makeText(this,"Jogador atualizado!",Toast.LENGTH_SHORT).show();
                 }else{
-                    //Remove jogador do ranking
+                    //Remove jogador do ranking(listActivity)
                     if(resultCode == RESULT_FIRST_USER){
                         Jogador jogador = (Jogador)data.getSerializableExtra(JOGADOR_REMOVIDO);
                         int i = buscaJogador(jogador.getNome());
@@ -216,7 +220,7 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
     }
 
 
-
+    //MÉTODO PARA BUSCAR UM JOGADOR NA LISTA DE JOGADORES
     public int buscaJogador(String nome) {
         int i=0;
         for (Jogador jogador : lista_de_jogadores) {
@@ -229,7 +233,7 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
 
         return -1;
     }
-
+    //METODO USADO PARA ZERAR A PONTUÇÃO DE TODOS JOGADORES
     public void zerarPontuacaoJogadores() {
 
         for (Jogador jogador : lista_de_jogadores) {
@@ -241,7 +245,7 @@ public class RankingActivity extends AppCompatActivity implements AdapterView.On
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //PERSISTE OS DADOS NO ARQUIVO SHARED PREFERENCES
+        //PERSISTE OS DADOS NO ARQUIVO SHARED PREFERENCES SEMPRE QUE  A ACTIVITY FOR DESTRUIDA
 
 
         JSONObject obj;

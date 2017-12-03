@@ -14,6 +14,14 @@ import java.util.logging.Handler;
 
 import br.edu.ifspsaocarlos.sdm.gamescore.R;
 
+
+//A JogarDadosActivity simula um lançamento de um dado de 6 faces
+// A animação utiliza o objeto AnimationDrawable que por sua vez
+//utiliza a animation.xml definida no diretorio drawable
+//O metodo CountDownTimer é utilizado pra controlar o tempo da animação.
+//O dado utiliza uma função random para o resultado e outra função random pra
+//variar o tempo da animação de dado girando
+
 public class JogarDadosActivity extends AppCompatActivity implements View.OnClickListener{
 
     //VARIÁVEIS
@@ -36,9 +44,6 @@ public class JogarDadosActivity extends AppCompatActivity implements View.OnClic
        iv_dado_animado = (ImageView)findViewById(R.id.iv_dadogif);
        iv_dado_animado.setBackgroundResource(R.drawable.animation);
 
-
-       //mAnimation = (AnimationDrawable)iv_dado_animado.getBackground();
-       //mAnimation.start();
     }
 
     @Override

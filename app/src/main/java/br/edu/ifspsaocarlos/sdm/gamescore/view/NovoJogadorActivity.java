@@ -13,6 +13,7 @@ import android.widget.TextView;
 import br.edu.ifspsaocarlos.sdm.gamescore.R;
 import br.edu.ifspsaocarlos.sdm.gamescore.model.Jogador;
 
+//Essa Activity pega os dados do novo jogador e retorna para a RankingActivity usar.
 
 public class NovoJogadorActivity extends AppCompatActivity implements View.OnClickListener{
 
